@@ -13,14 +13,7 @@ import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 import java.io.IOException;
 
-//import javax.mail.Message;
-//import javax.mail.PasswordAuthentication;
-//import javax.mail.Session;
-//import javax.mail.Transport;
-//import javax.mail.internet.InternetAddress;
-//import javax.mail.internet.MimeBodyPart;
-//import javax.mail.internet.MimeMessage;
-//import javax.mail.internet.MimeMultipart;
+
 
 class Test1 extends Frame implements ActionListener
 {
@@ -298,7 +291,7 @@ class Test1 extends Frame implements ActionListener
 					a[j]=set.getInt(7);
 					if(j>=0 && j<=9)
 					{
-						//try{Thread.sleep(200);}catch(InterruptedException e){System.out.println(e);}
+						try{Thread.sleep(200);}catch(InterruptedException e){System.out.println(e);}
 						l[j].setText("Mail sent to "+set.getString(2)+" Vehicle No. "+set.getString(5));
 						g.drawLine(0,80+j*60,1370,80+j*60);
 						b[j].setVisible(true);
@@ -598,7 +591,7 @@ class Test2 extends Frame implements ActionListener
 					a[j]=set.getInt(7);
 					if(j>=10 &&j<=19)
 					{
-						//try{Thread.sleep(200);}catch(InterruptedException e){System.out.println(e);}
+						try{Thread.sleep(200);}catch(InterruptedException e){System.out.println(e);}
 						l[j-10].setText("Mail sent to "+set.getString(2)+" Vehicle No. "+set.getString(5));
 						g.drawLine(0,80+(j-10)*60,1370,80+(j-10)*60);
 						b[j-10].setVisible(true);
@@ -897,7 +890,7 @@ class Test3 extends Frame implements ActionListener
 					a[j]=set.getInt(7);
 					if(j>=20 &&j<=29)
 					{
-						//try{Thread.sleep(200);}catch(InterruptedException e){System.out.println(e);}
+						try{Thread.sleep(200);}catch(InterruptedException e){System.out.println(e);}
 						l[j-20].setText("Mail sent to "+set.getString(2)+" Vehicle No. "+set.getString(5));
 						g.drawLine(0,80+(j-20)*60,1370,80+(j-20)*60);
 						b[j-20].setVisible(true);
@@ -2492,7 +2485,7 @@ public class LoginPage extends Frame implements ActionListener
 			String host="smtp.gmail.com";
 			Session session=Session.getInstance(properties, new Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {				
-			return new PasswordAuthentication("hunnyvarshney1999@gmail.com", "Hunny@!12");
+			return new PasswordAuthentication("hunnyvarshney1999@gmail.com", "*******");
 			}
 			});	
 			//System.out.println("PROPERTIES "+properties);
@@ -2629,7 +2622,7 @@ public class LoginPage extends Frame implements ActionListener
 			properties.put("mail.smtp.auth","true");
 			Session session=Session.getInstance(properties, new Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {				
-			return new PasswordAuthentication("hunnyvarshney1999@gmail.com", "Hunny@!12");
+			return new PasswordAuthentication("hunnyvarshney1999@gmail.com", "******");
 			}
 			});
 			session.setDebug(true);
@@ -2692,7 +2685,7 @@ public class LoginPage extends Frame implements ActionListener
 				properties.put("mail.smtp.auth","true");
 				Session session=Session.getInstance(properties, new Authenticator() {
 				protected PasswordAuthentication getPasswordAuthentication() {				
-				return new PasswordAuthentication("hunnyvarshney1999@gmail.com", "Hunny@!12");
+				return new PasswordAuthentication("hunnyvarshney1999@gmail.com", "********");
 				}
 				});
 				session.setDebug(true);
